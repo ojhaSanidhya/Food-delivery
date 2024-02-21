@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b8c5f10471.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        line-height: 1.4;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        /* border: 2px solid wheat; */
+        height: 2000px;
+        width: 85vw;
+        margin: auto;
+      }
+
+      .navigation {
+        /* border: 2px solid wheat; */
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .logo {
+        height: 60px;
+      }
+      .bar {
+        align-self: flex-end;
+      }
+
+      .Highlight {
+        /* border: 2px solid wheat; */
+        display: flex;
+        gap: 70px;
+        justify-content: center;
+        margin: 40px auto;
+        width: 75vw;
+        /* align-items: center; */
+      }
+
+      .hero {
+        height: 400px;
+      }
+
+      .Main {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 20px;
+        align-items: flex-start;
+      }
+
+      .Tags {
+        /* border: 1px solid black; */
+        background-color: green;
+        color: white;
+        padding: 5px 20px;
+      }
+      h1 {
+        /* border: 1px solid black; */
+        font-weight: bolder;
+        font-size: 70px;
+      }
+      button {
+        border: 1px solid whitesmoke;
+        background-color: orange;
+        color: white;
+        padding: 10px 25px;
+        font-weight: bold;
+      }
+
+      .Main-holder{
+        display: flex;
+        justify-content: center;
+      }
+
+      .Card-holder {
+        /* border: 2px solid wheat; */
+        height: 130px;
+    padding: 21px;
+    margin-top: 35px;
+gap: 10px;
+        width: 70vw;
+        display: flex;
+      }
+
+      .Cards{
+        /* border: 2px solid black; */
+        display: flex;
+        gap: 10px;
+      }
+
+      .Cards:hover{
+        transition: 0.2s ease-in-out;
+        box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1);
+      }
+      .check{
+        align-self: center;
+      }
+
+      hr{
+        margin-top: 30px;
+        margin-bottom: 60px;
+      }
+
+      .Menu{
+        height: 891px;
+        display: flex;
+        /* border: 2px solid wheat; */
+    flex-direction: column;
+    /* align-items: flex-start; */
+    align-items: center;
+    gap: 20px;
+    }
+
+    .Griding{
+        /* border: 2px solid red; */
+        width: 85vw;
+        /* height: 890px; */
+        display: grid;
+        gap: 10px;
+        /* padding: 20px; */
+        grid-template-areas: 
+        "a a b c"
+        "a a b g"
+        "d e f g";
+    }
+
+
+
+
+    .Img-1{
+      width: 550px;
+    height: 500px;
+        grid-area: a;
+    }
+        .Img-1 img{
+        width: 550px;
+    height: 500px;
+    }
+
+    .Img-2{
+      width: 250px;
+    height: 500px;
+        grid-area: b;
+    }
+    .Img-2 img{
+        width: 250px;
+    height: 500px;
+    }
+
+    .Img-3{
+      height: 265px;
+    width: 265px;
+    grid-area: c;
+    }
+    .Img-3 img{
+      height: 265px;
+    width: 265px;
+    }
+
+    .Img-4{
+      height: 265px;
+    width: 270px;
+        grid-area: d;
+    }
+    .Img-4 img{
+        width: 270px;
+    height: 265px; 
+    }
+    .Img-5{
+      height: 265px;
+    width: 270px;
+        grid-area: e;
+    }
+    .Img-5 img{
+        width: 270px;
+    height: 265px; 
+    }
+    .Img-6{
+      height: 265px;
+    width: 250px;
+        grid-area: f;
+    }
+    .Img-6 img{
+        width: 250px;
+    height: 265px; 
+    }
+    .Img-7{
+      width: 265px;
+    height: 500px;
+        grid-area: g;
+    }
+    .Img-7 img{
+      width: 265px;
+    height: 500px;
+    }
+
+    .grid_img:hover{
+      transform: scale(1.03);
+      transition: 0.2s ease-in-out;
+    }
+
+    .foot{
+      /* border: 2px solid black; */
+      margin-top: 120px;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      background-color: wheat;
+      /* color: white; */
+    }
+
+    .foot_content{
+      /* border: 1px solid black; */
+      width: 200px;
+      height: 120px;
+      align-self: center;
+      display: grid;
+      gap: 10px;
+    }
+
+    ul{
+      list-style-type: none
+    }
+
+    .Icons{
+      display: flex;
+      gap: 15px;
+    }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <nav class="navigation">
+        <div class="logo">
+          <img src="logo.png" alt="Logo" class="logo" />
+        </div>
+        <div class="bar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <div class="Highlight">
+        <div>
+          <img src="hero_image.png" alt="hero" class="hero" />
+        </div>
+        <div class="Main">
+          <div class="Tags">50 % OFF All Products</div>
+          <div class="Heading">
+            <h1>Enjoy Your Delicious Food</h1>
+            <p>
+              Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            </p>
+          </div>
+          <button>Explore Now</button>
+        </div>
+      </div>
+      <div class="Main-holder">
+        <div class="Card-holder">
+        <div class="Cards">
+          <div>
+            <img src="discount.png" alt="abcd" />
+          </div>
+          <div class="check">
+            <h4>Discount Voucher</h4>
+            <p>Quisque velit nisi, pretium ut lacinia in df fasf</p>
+          </div>
+        </div>
+        <div class="Cards">
+          <div>
+            <img src="fresh.png" alt="efgh" />
+          </div>
+          <div class="check">
+            <h4>Fresh Healthy Food</h4>
+            <p>Quisque velit nisi, pretium ut lacinia in df fasf</p>
+          </div>
+        </div>
+        <div class="Cards">
+          <div>
+            <img src="delivery.png" alt="ijkl" />
+          </div>
+          <div class="check">
+            <h4>Fast Home Delivery</h4>
+            <p>Quisque velit nisi, pretium ut lacinia in df fasf</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="Menu">
+        <div class="Tags">Our Menu</div>
+        <div>
+            <h2>Explore Our Menu</h2>
+        </div>
+        <div class="Griding">
+            <div class="Img-1">
+                <img src="grid_image1.png" alt="" class="grid_img">
+            </div>
+            <div class="Img-2">
+                <img src="grid_image2.png" alt="" class="grid_img">
+            </div>
+            <div class="Img-3">
+                <img src="grid_image3.png" alt="" class="grid_img">
+            </div>
+            <div class="Img-4">
+                <img src="grid_image4.png" alt="" class="grid_img">
+            </div>
+            <div class="Img-5">
+                <img src="grid_image5.png" alt="" class="grid_img">
+            </div>
+            <div class="Img-6">
+                <img src="grid_image6.png" alt="" class="grid_img">
+            </div>
+            <div class="Img-7">
+                <img src="grid_image7.png" alt="" class="grid_img">
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+      <div class="foot_content" id="logo2">
+        <img src="logo.png" alt="">
+      </div>
+      <div class="foot_content" id="Main Link">
+        <h4>Main Link</h4>
+        <ul>
+          <li>Order Tracking</li>
+          <li>New Order</li>
+          <li>Contact Us</li>
+          <li>News & Blogs</li>
+        </ul>
+      </div>
+      <div class="foot_content" id="Support">
+        <h4>Support</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+      <div class="foot_content" id="Newsletter">
+        <h4>Join Our Newsletter</h4>
+        <input type="email" name="" id="" placeholder="Enter your Email">
+        <h4>Follow Us</h4>
+        <div class="Icons">
+          <img src="Vector.png" alt="">
+          <img src="Vector (1).png" alt="">
+          <img src="Vector (2).png" alt="">
+          <img src="Vector (3).png" alt="">
+        </div>
+      </div>
+    </footer>
+    </section>
+  </body>
+</html>
